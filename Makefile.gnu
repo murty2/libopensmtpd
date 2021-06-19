@@ -5,7 +5,7 @@ LOCALBASE?=	/usr
 SRCS=		opensmtpd.c iobuf.c ioev.c
 HDRS=		opensmtpd.h
 MAN=		osmtpd_run.3
-LIBDIR?=	${LOCALBASE}/lib/
+LIBDIR?=	${LOCALBASE}/lib64
 MANDIR?=	${LOCALBASE}/share/man/man3
 LDLIBS+=	-levent
 
@@ -131,6 +131,7 @@ endif
 
 ${TARGET_LIB}: ${OBJS}
 	${CC} ${LDFLAGS} -o $@ ${OBJS} ${LDLIBS}
+	strip $@
 
 .DEFAULT_GOAL=		all
 .PHONY: all
