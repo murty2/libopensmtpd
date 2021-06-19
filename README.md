@@ -6,6 +6,7 @@ INSTALLING on Fedora
 sudo dnf install make gcc mandoc
 
 make -f Makefile.gnu
+
 sudo make -f Makefile.gnu install
 
 \# You can remove rpms you installed: sudo dnf erase make gcc mandoc
