@@ -1,7 +1,7 @@
 INSTALLING on Fedora
 --------------------
 
-# Make sure these are installed first: make gcc mandoc
+## Make sure these are installed first: make gcc mandoc
 sudo dnf install make gcc mandoc
 
 make -f Makefile.gnu
