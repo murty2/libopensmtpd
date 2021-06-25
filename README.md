@@ -1,3 +1,5 @@
+Based on Revision 59 of original filter-dkimsign at http://imperialat.at/dev/libopensmtpd/
+
 INSTALLING on Fedora
 --------------------
 
